@@ -4,6 +4,7 @@ install:
   - npm install
 
 script:
+  - npm run gen:tsx
   - npm run lint
   - npm run test-dts
   - npm run test
