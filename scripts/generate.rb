@@ -1,8 +1,12 @@
 #!/usr/bin/env ruby
 
+require 'json'
+
 def read_svg_icons(dir)
   Dir.glob(File.join(dir, '*.svg')).inject({}) do |ret, f|
-    ret[File.basename(f, '.svg')] = File.read f
+    name = File.basename(f, '.svg')
+    name = 'msg' if name === 'message'
+    ret[name] = File.read f
     ret
   end
 end
@@ -56,7 +60,7 @@ end
 
 def generate_readme(icons)
   columns = icons.keys.map{|n| "| ![#{n} icon](https://raw.githubusercontent.com/danklammer/bytesize-icons/master/dist/icons/#{n}.svg) | `<Icon name=\"#{n}\"/>` |"}.join("\n")
-  columns = icons.map{|n, h| "| ![#{n} icon](https://rhysd.github.io/react-component-bytesize-icons/icons/#{n}.svg) | `<Icon name=\"#{n}\"/>` |"}.join("\n")
+  columns = icons.map{|n, h| "| ![#{n} icon](https://rhysd.github.io/react-component-bytesize-icons/icons/#{n === 'message' ? 'msg' : n}.svg) | `<Icon name=\"#{n}\"/>` |"}.join("\n")
   table = <<-TABLE
 | Icon | React Component |
 |------|-----------------|
@@ -67,8 +71,14 @@ def generate_readme(icons)
   File.write(readme, template.gsub('{All icons table here}', table))
 end
 
+def generate_json_for_test(icons)
+  file =  File.join(__dir__, '..', 'test', 'icons.json')
+  File.write(file, JSON.generate(icons.keys))
+end
+
 icons = read_svg_icons File.join(__dir__, '..', 'node_modules', 'bytesize-icons', 'dist/icons')
 raise 'Icons not found' if icons.empty?
 
 generate_index_tsx icons
 generate_readme icons
+generate_json_for_test icons

@@ -4,14 +4,7 @@ import Icon, {BytesizeIconName} from '..';
 import {shallow} from 'enzyme';
 
 describe('<Icon>', function () {
-    const randomIcons = [
-        'search',
-        'ellipsis-vertical',
-        'arrow-left',
-        'arrow-left',
-        'volume',
-        'chevron-top',
-    ] as BytesizeIconName[];
+    const randomIcons = require('./icons.json') as BytesizeIconName[];
 
     for (const icon of randomIcons) {
         describe(`name="${icon}"`, function () {
@@ -29,9 +22,39 @@ describe('<Icon>', function () {
                     <Icon name={icon}/>
                 );
                 const p = i.find('svg').props();
-                A.equal(p.width, 32);
-                A.equal(p.height, 32);
-                A.equal(p.strokeWidth, '6.25%');
+                A.ok(p.width === undefined || p.width === 32);
+                A.ok(p.height === undefined || p.height === 32);
+                A.ok(p.strokeWidth === undefined || p.strokeWidth === '6.25%');
+            });
+
+            it('can change thickness', function () {
+                const i = shallow(
+                    <Icon name={icon} strokeWidth="light"/>
+                );
+                const p = i.find('svg').props();
+                A.ok(p.strokeWidth === undefined || p.strokeWidth === '4.6875%');
+            });
+
+            it('can change icon size', function () {
+                const i = shallow(
+                    <Icon name={icon} size="larger"/>
+                );
+                const p = i.find('svg').props();
+                A.ok(p.width === undefined || p.width === 48);
+                A.ok(p.height === undefined || p.height === 48);
+            });
+
+            it('can change icon size and thickness at the same time', function () {
+                const i = shallow(
+                    <Icon name={icon} strokeWidth="bold" size="small"/>
+                );
+                const p = i.find('svg').props();
+                A.ok(p.width === undefined || p.width === 24);
+                A.ok(p.height === undefined || p.height === 24);
+
+                // Note:
+                // Bold font's standard stroke width is 9.375. But it's small sized icon. So the width will be 9.375 - 1.5625 = 7.8125
+                A.ok(p.strokeWidth === undefined || p.strokeWidth === '7.8125%')
             });
         });
     }

@@ -285,7 +285,7 @@ function renderIcon(name, length, strokeWidth) {
             return React.createElement("svg", { id: "i-menu", viewBox: "0 0 32 32", width: length, height: length, fill: "none", stroke: "currentcolor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: strokeWidth },
                 React.createElement("path", { d: "M4 8 L28 8 M4 16 L28 16 M4 24 L28 24" }));
         }
-        case 'message': {
+        case 'msg': {
             return React.createElement("svg", { id: "i-msg", viewBox: "0 0 32 32", width: length, height: length, fill: "none", stroke: "currentcolor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: strokeWidth },
                 React.createElement("path", { d: "M2 4 L30 4 30 22 16 22 8 29 8 22 2 22 Z" }));
         }

@@ -121,7 +121,7 @@ T.B.W
 | ![lock icon](https://rhysd.github.io/react-component-bytesize-icons/icons/lock.svg) | `<Icon name="lock"/>` |
 | ![mail icon](https://rhysd.github.io/react-component-bytesize-icons/icons/mail.svg) | `<Icon name="mail"/>` |
 | ![menu icon](https://rhysd.github.io/react-component-bytesize-icons/icons/menu.svg) | `<Icon name="menu"/>` |
-| ![message icon](https://rhysd.github.io/react-component-bytesize-icons/icons/message.svg) | `<Icon name="message"/>` |
+| ![msg icon](https://rhysd.github.io/react-component-bytesize-icons/icons/msg.svg) | `<Icon name="msg"/>` |
 | ![minus icon](https://rhysd.github.io/react-component-bytesize-icons/icons/minus.svg) | `<Icon name="minus"/>` |
 | ![music icon](https://rhysd.github.io/react-component-bytesize-icons/icons/music.svg) | `<Icon name="music"/>` |
 | ![mute icon](https://rhysd.github.io/react-component-bytesize-icons/icons/mute.svg) | `<Icon name="mute"/>` |

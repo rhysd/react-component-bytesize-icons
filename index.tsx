@@ -422,7 +422,7 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
       </svg>;
     }
 
-    case 'message': {
+    case 'msg': {
       return <svg id="i-msg" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
           <path d="M2 4 L30 4 30 22 16 22 8 29 8 22 2 22 Z" />
       </svg>;
@@ -660,7 +660,7 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
   | 'lock'
   | 'mail'
   | 'menu'
-  | 'message'
+  | 'msg'
   | 'minus'
   | 'music'
   | 'mute'
