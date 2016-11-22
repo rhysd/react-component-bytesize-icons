@@ -56,6 +56,7 @@ of `<svg>` from `strokeWidth` prop and `size` prop.
 
 I didn't directly write [index.tsx](index.tsx). It's generated with [Ruby script](./scripts/generate.rb).
 It generates TypeScript code by referring [bytesize-icons][] repository directly.
+So, when bytesize-icons is updated (e.g. adding new icon), we can easily follow the change with one or two commands.
 
 ### Well tested
 
