@@ -2,6 +2,8 @@ React Compoent for [bytesize-icons][]
 =====================================
 [![Build Status](https://travis-ci.org/rhysd/react-component-bytesize-icons.svg)](https://travis-ci.org/rhysd/react-component-bytesize-icons)
 
+This package is yet another React component library for [bytesize-icons](https://github.com/danklammer/bytesize-icons).
+
 ## Installation
 
 ```sh
