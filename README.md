@@ -38,7 +38,7 @@ The `name` property is corresponding to described icons in [bytesize-icons repo'
 
 `strokeWidth` takes one of `ultra-light`, `thin`, `light`, `regular`, `medium`, `bold` or `heavy`.
 
-`size` takes one of `small`, `regular`, `larger` or `largest`.
+`size` takes one of `small`, `regular`, `larger` or `largest`. `small` is `24px`, `regular` is `32px`, `larger` is `48px` and `largest` is `64px`. With these size, icons are rendered the best. You should choose one from them and tweak the size with CSS.
 
 You can also see [type definition file](./index.d.ts) for more detail.
 
