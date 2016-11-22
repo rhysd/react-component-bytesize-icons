@@ -2,6 +2,8 @@ React Compoent for [bytesize-icons][]
 =====================================
 [![Build Status](https://travis-ci.org/rhysd/react-component-bytesize-icons.svg)](https://travis-ci.org/rhysd/react-component-bytesize-icons)
 
+This package is yet another React component library for [bytesize-icons][]. [bytesize-icons][] is a SVG based, nice and reasonable icon set.
+
 ## Installation
 
 ```sh
@@ -62,11 +64,11 @@ It generates TypeScript code by referring [bytesize-icons][] repository directly
 This package is checked at 3 stages.
 
 - Style check with [tslint](https://github.com/palantir/tslint)
-- Type check on compilation from TypeScript
+- Type check on compilation from TypeScript (with strict null checks)
 - Unit tests for ALL icons with [enzyme][] and [mocha][]
 
 Of course you can use this package in safe way using TypeScript because this package
-contains its type definitions.
+contains its type definitions. Type definitions are also tested.
 
 ### No dependency
 
