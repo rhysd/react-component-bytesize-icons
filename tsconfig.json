@@ -16,6 +16,8 @@
     "jsx": "react"
   },
   "include": [
-    "index.tsx"
+    "index.tsx",
+    "test/*.tsx",
+    "test/typings/*.d.ts"
   ]
 }
