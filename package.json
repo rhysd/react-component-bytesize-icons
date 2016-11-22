@@ -8,6 +8,7 @@
     "@types/mocha": "^2.2.33",
     "@types/node": "^6.0.49",
     "@types/react": "^0.14.50",
+    "@types/react-dom": "^0.14.19",
     "bytesize-icons": "^1.1.0",
     "enzyme": "^2.6.0",
     "mocha": "^3.1.2",
@@ -23,8 +24,9 @@
     "gen:dts": "tsc -d --jsx react index.tsx",
     "gen": "npm run gen:template && npm run gen:tsx && npm run gen:dts",
     "lint": "tslint index.tsx test/*.tsx",
+    "test-dts": "tsc --jsx react --noEmit test-dts/test.tsx index.d.ts",
     "test": "tsc -p . && mocha test/*.js",
-    "preversion": "npm run lint && npm run test"
+    "preversion": "npm run lint && npm run test-dts && npm run test"
   },
   "repository": {
     "type": "git",
