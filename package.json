@@ -1,0 +1,37 @@
+{
+  "name": "react-component-bytesize-icon",
+  "version": "0.0.0",
+  "description": "One react component for bytesize icons",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "bytesize-icons": "^1.1.0",
+    "react": "^15.4.0",
+    "typescript": "^2.0.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhysd/react-component-bytesize-icon.git"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "icon",
+    "bytesize icon"
+  ],
+  "author": "rhysd <lin90162@yahoo.co.jp>",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "bugs": {
+    "url": "https://github.com/rhysd/react-component-bytesize-icon/issues"
+  },
+  "homepage": "https://github.com/rhysd/react-component-bytesize-icon#readme"
+}
