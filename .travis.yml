@@ -4,7 +4,6 @@ install:
   - npm install
 
 script:
-  - npm run gen
   - npm run lint
   - npm run test-dts
   - npm run test
