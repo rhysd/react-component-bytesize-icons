@@ -54,7 +54,7 @@ describe('<Icon>', function () {
 
                 // Note:
                 // Bold font's standard stroke width is 9.375. But it's small sized icon. So the width will be 9.375 - 1.5625 = 7.8125
-                A.ok(p.strokeWidth === undefined || p.strokeWidth === '7.8125%')
+                A.ok(p.strokeWidth === undefined || p.strokeWidth === '7.8125%');
             });
         });
     }

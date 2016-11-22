@@ -14,6 +14,7 @@
     "react": "^15.4.0",
     "react-addons-test-utils": "^15.4.0",
     "react-dom": "^15.4.0",
+    "tslint": "~3.15.1",
     "typescript": "~2.1.0"
   },
   "scripts": {
@@ -21,7 +22,9 @@
     "gen:tsx": "tsc -p .",
     "gen:dts": "tsc -d --jsx react index.tsx",
     "gen": "npm run gen:template && npm run gen:tsx && npm run gen:dts",
-    "test": "tsc -p . && mocha test/*.js"
+    "lint": "tslint index.tsx test/*.tsx",
+    "test": "tsc -p . && mocha test/*.js",
+    "preversion": "npm run lint && npm run test"
   },
   "repository": {
     "type": "git",
