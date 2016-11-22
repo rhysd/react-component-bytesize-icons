@@ -56,7 +56,7 @@ end
 
 def generate_readme(icons)
   columns = icons.keys.map{|n| "| ![#{n} icon](https://raw.githubusercontent.com/danklammer/bytesize-icons/master/dist/icons/#{n}.svg) | `<Icon name=\"#{n}\"/>` |"}.join("\n")
-  columns = icons.map{|n, h| "| ![#{n} icon](https://rhysd.github.io/react-component-bytesize-icons/dist/icons/#{n}.svg) | `<Icon name=\"#{n}\"/>` |"}.join("\n")
+  columns = icons.map{|n, h| "| ![#{n} icon](https://rhysd.github.io/react-component-bytesize-icons/icons/#{n}.svg) | `<Icon name=\"#{n}\"/>` |"}.join("\n")
   table = <<-TABLE
 | Icon | React Component |
 |------|-----------------|

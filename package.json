@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "description": "One react component for bytesize icons",
   "main": "index.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@types/react": "^0.14.50",
     "bytesize-icons": "^1.1.0",
     "react": "^15.4.0",
     "typescript": "~2.1.0"

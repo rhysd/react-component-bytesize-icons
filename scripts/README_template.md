@@ -60,7 +60,7 @@ T.B.W
 
 T.B.W
 
-## Icons
+## All Icons
 
 {All icons table here}
 
