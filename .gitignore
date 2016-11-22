@@ -2,5 +2,4 @@
 *.js.map
 npm-debug.log
 /test/*.js
-/test/icons.json
 /test-dts/*.js
