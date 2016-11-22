@@ -1,5 +1,6 @@
 React Compoent for [bytesize-icons][]
 =====================================
+[![Build Status](https://travis-ci.org/rhysd/react-component-bytesize-icons.svg)](https://travis-ci.org/rhysd/react-component-bytesize-icons)
 
 ## Installation
 

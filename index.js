@@ -12,19 +12,19 @@ var STROKE_WIDTH_TO_PERCENT = {
     regular: 6.25,
     medium: 7.8125,
     bold: 9.375,
-    heavy: 10.9375,
+    heavy: 10.9375
 };
 var SIZE_TO_PERCENT_INCREMENT = {
     small: -1.5625,
     regular: 0.0,
     larger: 1.5625,
-    largest: 3.125,
+    largest: 3.125
 };
 var SIZE_TO_PIXELS = {
     small: 24,
     regular: 32,
     larger: 48,
-    largest: 64,
+    largest: 64
 };
 var BytesizeIcon = (function (_super) {
     __extends(BytesizeIcon, _super);
@@ -38,8 +38,8 @@ var BytesizeIcon = (function (_super) {
     };
     return BytesizeIcon;
 }(React.PureComponent));
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = BytesizeIcon;
+exports.__esModule = true;
+exports["default"] = BytesizeIcon;
 function renderIcon(name, length, strokeWidth) {
     switch (name) {
         case 'activity': {
@@ -408,4 +408,3 @@ function renderIcon(name, length, strokeWidth) {
             return null;
     }
 }
-//# sourceMappingURL=index.js.map
