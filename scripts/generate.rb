@@ -54,8 +54,21 @@ def generate_index_tsx(icons)
   JS
 end
 
+def generate_readme(icons)
+  columns = icons.keys.map{|n| "| ![#{n} icon](https://raw.githubusercontent.com/danklammer/bytesize-icons/master/dist/icons/#{n}.svg) | `<Icon name=\"#{n}\"/>` |"}.join("\n")
+  columns = icons.map{|n, h| "| ![#{n} icon](https://rhysd.github.io/react-component-bytesize-icons/dist/icons/#{n}.svg) | `<Icon name=\"#{n}\"/>` |"}.join("\n")
+  table = <<-TABLE
+| Icon | React Component |
+|------|-----------------|
+#{columns}
+  TABLE
+  template = File.read File.join(__dir__, 'README_template.md')
+  readme =  File.join(__dir__, '..', 'README.md')
+  File.write(readme, template.gsub('{All icons table here}', table))
+end
+
 icons = read_svg_icons File.join(__dir__, '..', 'node_modules', 'bytesize-icons', 'dist/icons')
 raise 'Icons not found' if icons.empty?
 
 generate_index_tsx icons
-
+generate_readme icons

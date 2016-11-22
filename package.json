@@ -11,7 +11,7 @@
     "typescript": "~2.1.0"
   },
   "scripts": {
-    "gen:template": "./src/generate.rb",
+    "gen:template": "./scripts/generate.rb",
     "gen:tsx": "tsc -p .",
     "gen:dts": "tsc -d --jsx react index.tsx",
     "gen": "npm run gen:template && npm run gen:tsx && npm run gen:dts",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rhysd/react-component-bytesize-icon.git"
+    "url": "git+https://github.com/rhysd/react-component-bytesize-icons.git"
   },
   "keywords": [
     "react",
