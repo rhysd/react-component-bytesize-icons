@@ -23,7 +23,7 @@ const Message = (props) => (
 );
 ```
 
-The `name` property is corresponding to described icons in [bytesize-icons repo's README][]. You can also see the bottom section of this README to know all avaialble icons.
+The `name` property is corresponding to described icons in [bytesize-icons repo's README][]. You can also see the bottom section of this README to know all available icons.
 
 
 ## Properties of `<Icon/>` Component
@@ -41,25 +41,36 @@ The `name` property is corresponding to described icons in [bytesize-icons repo'
 You can also see [type definition file](./index.d.ts) for more detail.
 
 
-## Difference Between [react-bytesize-icons][]
+## Difference From [react-bytesize-icons][]
 
 There is already a React component package for bytesize-icons but I created this for the below points
 
-### Switch with props
+### Easy to tweak icon size and weight
 
-T.B.W
+react-bytesize-icons directly shows `<svg>` element's props such as `height` or `strokeWidth`.
+It means that user must calculate icons' stroke width by its size and thickness.
+react-component-bytesize-icons calculates the best `strokeWidth`, `height` and `width` attributes
+of `<svg>` from `strokeWidth` prop and `size` prop.
 
 ### Maintenancability
 
-T.B.W
+I didn't directly write [index.tsx](index.tsx). It's generated with [Ruby script](./scripts/generate.rb).
+It generates TypeScript code by referring [bytesize-icons][] repository directly.
 
-### TypeScript support
+### Well tested
 
-T.B.W
+This package is checked at 3 stages.
 
-### Don't require React dependency
+- Style check with [tslint](https://github.com/palantir/tslint)
+- Type check on compilation from TypeScript
+- Unit tests for ALL icons with [enzyme][] and [mocha][]
 
-T.B.W
+Of course you can use this package in safe way using TypeScript because this package
+contains its type definitions.
+
+### No dependency
+
+This package depends on no package.
 
 ## All Icons
 
@@ -68,3 +79,21 @@ T.B.W
 [react-bytesize-icons]: https://github.com/abdelhai/react-bytesize-icons
 [bytesize-icons]: https://github.com/danklammer/bytesize-icons
 [bytesize-icon repo's README]: https://github.com/danklammer/bytesize-icons#readme
+[enzyme]: https://github.com/airbnb/enzyme
+[mocha]: https://github.com/mochajs/mocha
+
+## Development
+
+```sh
+# Install development dependencies
+$ npm install
+
+# Generate index.tsx and compile it
+$ npm run gen
+
+# Check code style
+$ npm run lint
+
+# Run tests
+$ npm test
+```
