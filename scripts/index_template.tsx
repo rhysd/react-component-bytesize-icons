@@ -43,18 +43,18 @@ const SIZE_TO_PIXELS = {
 
 export interface BytesizeIconProps extends React.Props<BytesizeIcon> {
     name: BytesizeIconName;
-    strokeWidth?: BytesizeIconStrokeWidth;
+    thickness?: BytesizeIconStrokeWidth;
     size?: BytesizeIconSize;
 }
 
 export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps, {}> {
     render() {
-        const {name, strokeWidth, size} = this.props;
+        const {name, thickness, size} = this.props;
         return renderIcon(
             name,
             SIZE_TO_PIXELS[size || 'regular'],
             `${
-                STROKE_WIDTH_TO_PERCENT[strokeWidth || 'regular'] +
+                STROKE_WIDTH_TO_PERCENT[thickness || 'regular'] +
                 SIZE_TO_PERCENT_INCREMENT[size || 'regular']
             }%`
         );

@@ -4,7 +4,7 @@ export declare type BytesizeIconStrokeWidth = 'ultra-light' | 'thin' | 'light' |
 export declare type BytesizeIconSize = 'small' | 'regular' | 'larger' | 'largest';
 export interface BytesizeIconProps extends React.Props<BytesizeIcon> {
     name: BytesizeIconName;
-    strokeWidth?: BytesizeIconStrokeWidth;
+    thickness?: BytesizeIconStrokeWidth;
     size?: BytesizeIconSize;
 }
 export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps, {}> {

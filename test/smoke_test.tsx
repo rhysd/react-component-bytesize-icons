@@ -29,7 +29,7 @@ describe('<Icon>', function () {
 
             it('can change thickness', function () {
                 const i = shallow(
-                    <Icon name={icon} strokeWidth="light"/>
+                    <Icon name={icon} thickness="light"/>
                 );
                 const p = i.find('svg').props();
                 A.ok(p.strokeWidth === undefined || p.strokeWidth === '4.6875%');
@@ -46,7 +46,7 @@ describe('<Icon>', function () {
 
             it('can change icon size and thickness at the same time', function () {
                 const i = shallow(
-                    <Icon name={icon} strokeWidth="bold" size="small"/>
+                    <Icon name={icon} thickness="bold" size="small"/>
                 );
                 const p = i.find('svg').props();
                 A.ok(p.width === undefined || p.width === 24);

@@ -19,8 +19,8 @@ import Icon from 'react-component-bytesize-icons';
 const Message = (props) => (
     <div>
         Search icon: <Icon name="search"/>
-        Thin large icon: <Icon name="book" strokeWidth="thin" size="larger"/>
-        Thick small icon: <Icon name="flag" strokeWidth="bold"/>
+        Thin large icon: <Icon name="book" thickness="thin" size="larger"/>
+        Thick small icon: <Icon name="flag" thickness="bold"/>
     </div>
 );
 ```
@@ -33,10 +33,10 @@ The `name` property is corresponding to described icons in [bytesize-icons repo'
 | Property      | Description                | Default   |
 |---------------|----------------------------|-----------|
 | `name`        | Name of icon (required).   | N/A       |
-| `strokeWidth` | Line thickness (optional). | `regular` |
+| `thickness`   | Line thickness (optional). | `regular` |
 | `size`        | Size of icon (optional).   | `regular` |
 
-`strokeWidth` takes one of `ultra-light`, `thin`, `light`, `regular`, `medium`, `bold` or `heavy`.
+`thickness` takes one of `ultra-light`, `thin`, `light`, `regular`, `medium`, `bold` or `heavy`.
 
 `size` takes one of `small`, `regular`, `larger` or `largest`. `small` is `24px`, `regular` is `32px`, `larger` is `48px` and `largest` is `64px`. With these size, icons are rendered the best. You should choose one from them and tweak the size with CSS.
 
@@ -52,7 +52,7 @@ There is already a React component package for bytesize-icons but I created this
 react-bytesize-icons directly shows `<svg>` element's props such as `height` or `strokeWidth`.
 It means that user must calculate icons' stroke width by its size and thickness.
 react-component-bytesize-icons calculates the best `strokeWidth`, `height` and `width` attributes
-of `<svg>` from `strokeWidth` prop and `size` prop.
+of `<svg>` from `thickness` prop and `size` prop.
 
 ### Maintenancability
 
