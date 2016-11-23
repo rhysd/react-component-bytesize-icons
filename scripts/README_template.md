@@ -2,7 +2,8 @@ React Compoent for [bytesize-icons][]
 =====================================
 [![Build Status](https://travis-ci.org/rhysd/react-component-bytesize-icons.svg)](https://travis-ci.org/rhysd/react-component-bytesize-icons)
 
-This package is yet another React component library for [bytesize-icons][]. [bytesize-icons][] is a SVG based, nice and reasonable icon set.
+This package is yet another React component library for [bytesize-icons][].
+bytesize-icons is a SVG based, nice and reasonable icon set.
 
 ## Installation
 
@@ -20,12 +21,13 @@ const Message = (props) => (
     <div>
         Search icon: <Icon name="search"/>
         Thin large icon: <Icon name="book" thickness="thin" size="larger"/>
-        Thick small icon: <Icon name="flag" thickness="bold"/>
+        Thick small icon: <Icon name="flag" thickness="bold" size="small"/>
     </div>
 );
 ```
 
-The `name` property is corresponding to described icons in [bytesize-icons repo's README][]. You can also see the bottom section of this README to know all available icons.
+The `name` property is corresponding to described icons in [bytesize-icons repo's README][].
+You can also see the bottom section of this README to know all available icons.
 
 
 ## Properties of `<Icon/>` Component
@@ -38,7 +40,8 @@ The `name` property is corresponding to described icons in [bytesize-icons repo'
 
 `thickness` takes one of `ultra-light`, `thin`, `light`, `regular`, `medium`, `bold` or `heavy`.
 
-`size` takes one of `small`, `regular`, `larger` or `largest`. `small` is `24px`, `regular` is `32px`, `larger` is `48px` and `largest` is `64px`. With these size, icons are rendered the best. You should choose one from them and tweak the size with CSS.
+`size` takes one of `small`, `regular`, `larger` or `largest`. `small` is `24px`, `regular` is `32px`, `larger` is `48px` and `largest` is `64px`.
+With these size, icons are rendered the best. You should choose one from them and tweak the size with CSS.
 
 You can also see [type definition file](./index.d.ts) for more detail.
 
