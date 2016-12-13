@@ -56,7 +56,7 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
             `${
                 STROKE_WIDTH_TO_PERCENT[thickness || 'regular'] +
                 SIZE_TO_PERCENT_INCREMENT[size || 'regular']
-            }%`
+            }%`,
         );
     }
 }

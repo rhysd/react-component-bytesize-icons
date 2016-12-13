@@ -10,7 +10,7 @@ describe('<Icon>', function () {
         describe(`name="${icon}"`, function () {
             it('renders icon component', function () {
                 const i = shallow(
-                    <Icon name={icon}/>
+                    <Icon name={icon}/>,
                 );
                 const body = i.find('svg');
                 A.ok(body);
@@ -19,7 +19,7 @@ describe('<Icon>', function () {
 
             it('renders default thickness icon', function () {
                 const i = shallow(
-                    <Icon name={icon}/>
+                    <Icon name={icon}/>,
                 );
                 const p = i.find('svg').props();
                 A.ok(p.width === undefined || p.width === 32);
@@ -29,7 +29,7 @@ describe('<Icon>', function () {
 
             it('can change thickness', function () {
                 const i = shallow(
-                    <Icon name={icon} thickness="light"/>
+                    <Icon name={icon} thickness="light"/>,
                 );
                 const p = i.find('svg').props();
                 A.ok(p.strokeWidth === undefined || p.strokeWidth === '4.6875%');
@@ -37,7 +37,7 @@ describe('<Icon>', function () {
 
             it('can change icon size', function () {
                 const i = shallow(
-                    <Icon name={icon} size="larger"/>
+                    <Icon name={icon} size="larger"/>,
                 );
                 const p = i.find('svg').props();
                 A.ok(p.width === undefined || p.width === 48);
@@ -46,7 +46,7 @@ describe('<Icon>', function () {
 
             it('can change icon size and thickness at the same time', function () {
                 const i = shallow(
-                    <Icon name={icon} thickness="bold" size="small"/>
+                    <Icon name={icon} thickness="bold" size="small"/>,
                 );
                 const p = i.find('svg').props();
                 A.ok(p.width === undefined || p.width === 24);
