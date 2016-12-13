@@ -42,9 +42,9 @@ const SIZE_TO_PIXELS = {
 } as {[name: string]: number};
 
 export interface BytesizeIconProps extends React.Props<BytesizeIcon> {
-    name: BytesizeIconName;
-    thickness?: BytesizeIconStrokeWidth;
-    size?: BytesizeIconSize;
+    readonly name: BytesizeIconName;
+    readonly thickness?: BytesizeIconStrokeWidth;
+    readonly size?: BytesizeIconSize;
 }
 
 export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps, {}> {

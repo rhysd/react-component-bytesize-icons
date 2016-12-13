@@ -3,9 +3,9 @@ import * as React from 'react';
 export declare type BytesizeIconStrokeWidth = 'ultra-light' | 'thin' | 'light' | 'regular' | 'medium' | 'bold' | 'heavy';
 export declare type BytesizeIconSize = 'small' | 'regular' | 'larger' | 'largest';
 export interface BytesizeIconProps extends React.Props<BytesizeIcon> {
-    name: BytesizeIconName;
-    thickness?: BytesizeIconStrokeWidth;
-    size?: BytesizeIconSize;
+    readonly name: BytesizeIconName;
+    readonly thickness?: BytesizeIconStrokeWidth;
+    readonly size?: BytesizeIconSize;
 }
 export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps, {}> {
     render(): JSX.Element;
