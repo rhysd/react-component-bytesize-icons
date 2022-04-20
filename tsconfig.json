@@ -17,7 +17,6 @@
   },
   "include": [
     "index.tsx",
-    "test/*.tsx",
-    "test/typings/*.d.ts"
+    "test/*.tsx"
   ]
 }

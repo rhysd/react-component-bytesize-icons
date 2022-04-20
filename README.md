@@ -89,6 +89,7 @@ This package depends on no package.
 | ![arrow-right icon](https://rhysd.github.io/react-component-bytesize-icons/icons/arrow-right.svg) | `<Icon name="arrow-right"/>` |
 | ![arrow-top icon](https://rhysd.github.io/react-component-bytesize-icons/icons/arrow-top.svg) | `<Icon name="arrow-top"/>` |
 | ![backwards icon](https://rhysd.github.io/react-component-bytesize-icons/icons/backwards.svg) | `<Icon name="backwards"/>` |
+| ![bag icon](https://rhysd.github.io/react-component-bytesize-icons/icons/bag.svg) | `<Icon name="bag"/>` |
 | ![ban icon](https://rhysd.github.io/react-component-bytesize-icons/icons/ban.svg) | `<Icon name="ban"/>` |
 | ![bell icon](https://rhysd.github.io/react-component-bytesize-icons/icons/bell.svg) | `<Icon name="bell"/>` |
 | ![book icon](https://rhysd.github.io/react-component-bytesize-icons/icons/book.svg) | `<Icon name="book"/>` |
@@ -105,11 +106,13 @@ This package depends on no package.
 | ![chevron-left icon](https://rhysd.github.io/react-component-bytesize-icons/icons/chevron-left.svg) | `<Icon name="chevron-left"/>` |
 | ![chevron-right icon](https://rhysd.github.io/react-component-bytesize-icons/icons/chevron-right.svg) | `<Icon name="chevron-right"/>` |
 | ![chevron-top icon](https://rhysd.github.io/react-component-bytesize-icons/icons/chevron-top.svg) | `<Icon name="chevron-top"/>` |
+| ![clipboard icon](https://rhysd.github.io/react-component-bytesize-icons/icons/clipboard.svg) | `<Icon name="clipboard"/>` |
 | ![clock icon](https://rhysd.github.io/react-component-bytesize-icons/icons/clock.svg) | `<Icon name="clock"/>` |
 | ![close icon](https://rhysd.github.io/react-component-bytesize-icons/icons/close.svg) | `<Icon name="close"/>` |
 | ![code icon](https://rhysd.github.io/react-component-bytesize-icons/icons/code.svg) | `<Icon name="code"/>` |
 | ![compose icon](https://rhysd.github.io/react-component-bytesize-icons/icons/compose.svg) | `<Icon name="compose"/>` |
 | ![creditcard icon](https://rhysd.github.io/react-component-bytesize-icons/icons/creditcard.svg) | `<Icon name="creditcard"/>` |
+| ![desktop icon](https://rhysd.github.io/react-component-bytesize-icons/icons/desktop.svg) | `<Icon name="desktop"/>` |
 | ![download icon](https://rhysd.github.io/react-component-bytesize-icons/icons/download.svg) | `<Icon name="download"/>` |
 | ![edit icon](https://rhysd.github.io/react-component-bytesize-icons/icons/edit.svg) | `<Icon name="edit"/>` |
 | ![eject icon](https://rhysd.github.io/react-component-bytesize-icons/icons/eject.svg) | `<Icon name="eject"/>` |
@@ -119,12 +122,15 @@ This package depends on no package.
 | ![export icon](https://rhysd.github.io/react-component-bytesize-icons/icons/export.svg) | `<Icon name="export"/>` |
 | ![external icon](https://rhysd.github.io/react-component-bytesize-icons/icons/external.svg) | `<Icon name="external"/>` |
 | ![eye icon](https://rhysd.github.io/react-component-bytesize-icons/icons/eye.svg) | `<Icon name="eye"/>` |
+| ![feed icon](https://rhysd.github.io/react-component-bytesize-icons/icons/feed.svg) | `<Icon name="feed"/>` |
 | ![file icon](https://rhysd.github.io/react-component-bytesize-icons/icons/file.svg) | `<Icon name="file"/>` |
-| ![fire icon](https://rhysd.github.io/react-component-bytesize-icons/icons/fire.svg) | `<Icon name="fire"/>` |
+| ![filter icon](https://rhysd.github.io/react-component-bytesize-icons/icons/filter.svg) | `<Icon name="filter"/>` |
 | ![flag icon](https://rhysd.github.io/react-component-bytesize-icons/icons/flag.svg) | `<Icon name="flag"/>` |
 | ![folder-open icon](https://rhysd.github.io/react-component-bytesize-icons/icons/folder-open.svg) | `<Icon name="folder-open"/>` |
 | ![folder icon](https://rhysd.github.io/react-component-bytesize-icons/icons/folder.svg) | `<Icon name="folder"/>` |
 | ![forwards icon](https://rhysd.github.io/react-component-bytesize-icons/icons/forwards.svg) | `<Icon name="forwards"/>` |
+| ![fullscreen-exit icon](https://rhysd.github.io/react-component-bytesize-icons/icons/fullscreen-exit.svg) | `<Icon name="fullscreen-exit"/>` |
+| ![fullscreen icon](https://rhysd.github.io/react-component-bytesize-icons/icons/fullscreen.svg) | `<Icon name="fullscreen"/>` |
 | ![gift icon](https://rhysd.github.io/react-component-bytesize-icons/icons/gift.svg) | `<Icon name="gift"/>` |
 | ![github icon](https://rhysd.github.io/react-component-bytesize-icons/icons/github.svg) | `<Icon name="github"/>` |
 | ![heart icon](https://rhysd.github.io/react-component-bytesize-icons/icons/heart.svg) | `<Icon name="heart"/>` |
@@ -139,7 +145,11 @@ This package depends on no package.
 | ![mail icon](https://rhysd.github.io/react-component-bytesize-icons/icons/mail.svg) | `<Icon name="mail"/>` |
 | ![menu icon](https://rhysd.github.io/react-component-bytesize-icons/icons/menu.svg) | `<Icon name="menu"/>` |
 | ![msg icon](https://rhysd.github.io/react-component-bytesize-icons/icons/msg.svg) | `<Icon name="msg"/>` |
+| ![microphone icon](https://rhysd.github.io/react-component-bytesize-icons/icons/microphone.svg) | `<Icon name="microphone"/>` |
 | ![minus icon](https://rhysd.github.io/react-component-bytesize-icons/icons/minus.svg) | `<Icon name="minus"/>` |
+| ![mobile icon](https://rhysd.github.io/react-component-bytesize-icons/icons/mobile.svg) | `<Icon name="mobile"/>` |
+| ![moon icon](https://rhysd.github.io/react-component-bytesize-icons/icons/moon.svg) | `<Icon name="moon"/>` |
+| ![move icon](https://rhysd.github.io/react-component-bytesize-icons/icons/move.svg) | `<Icon name="move"/>` |
 | ![music icon](https://rhysd.github.io/react-component-bytesize-icons/icons/music.svg) | `<Icon name="music"/>` |
 | ![mute icon](https://rhysd.github.io/react-component-bytesize-icons/icons/mute.svg) | `<Icon name="mute"/>` |
 | ![options icon](https://rhysd.github.io/react-component-bytesize-icons/icons/options.svg) | `<Icon name="options"/>` |
@@ -155,9 +165,12 @@ This package depends on no package.
 | ![search icon](https://rhysd.github.io/react-component-bytesize-icons/icons/search.svg) | `<Icon name="search"/>` |
 | ![send icon](https://rhysd.github.io/react-component-bytesize-icons/icons/send.svg) | `<Icon name="send"/>` |
 | ![settings icon](https://rhysd.github.io/react-component-bytesize-icons/icons/settings.svg) | `<Icon name="settings"/>` |
+| ![sign-in icon](https://rhysd.github.io/react-component-bytesize-icons/icons/sign-in.svg) | `<Icon name="sign-in"/>` |
+| ![sign-out icon](https://rhysd.github.io/react-component-bytesize-icons/icons/sign-out.svg) | `<Icon name="sign-out"/>` |
 | ![star icon](https://rhysd.github.io/react-component-bytesize-icons/icons/star.svg) | `<Icon name="star"/>` |
 | ![start icon](https://rhysd.github.io/react-component-bytesize-icons/icons/start.svg) | `<Icon name="start"/>` |
 | ![tag icon](https://rhysd.github.io/react-component-bytesize-icons/icons/tag.svg) | `<Icon name="tag"/>` |
+| ![telephone icon](https://rhysd.github.io/react-component-bytesize-icons/icons/telephone.svg) | `<Icon name="telephone"/>` |
 | ![trash icon](https://rhysd.github.io/react-component-bytesize-icons/icons/trash.svg) | `<Icon name="trash"/>` |
 | ![twitter icon](https://rhysd.github.io/react-component-bytesize-icons/icons/twitter.svg) | `<Icon name="twitter"/>` |
 | ![unlock icon](https://rhysd.github.io/react-component-bytesize-icons/icons/unlock.svg) | `<Icon name="unlock"/>` |
@@ -166,6 +179,9 @@ This package depends on no package.
 | ![video icon](https://rhysd.github.io/react-component-bytesize-icons/icons/video.svg) | `<Icon name="video"/>` |
 | ![volume icon](https://rhysd.github.io/react-component-bytesize-icons/icons/volume.svg) | `<Icon name="volume"/>` |
 | ![work icon](https://rhysd.github.io/react-component-bytesize-icons/icons/work.svg) | `<Icon name="work"/>` |
+| ![zoom-in icon](https://rhysd.github.io/react-component-bytesize-icons/icons/zoom-in.svg) | `<Icon name="zoom-in"/>` |
+| ![zoom-out icon](https://rhysd.github.io/react-component-bytesize-icons/icons/zoom-out.svg) | `<Icon name="zoom-out"/>` |
+| ![zoom-reset icon](https://rhysd.github.io/react-component-bytesize-icons/icons/zoom-reset.svg) | `<Icon name="zoom-reset"/>` |
 
 
 [react-bytesize-icons]: https://github.com/abdelhai/react-bytesize-icons
