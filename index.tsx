@@ -113,6 +113,12 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
       </svg>;
     }
 
+    case 'bag': {
+      return <svg id="i-bag" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
+          <path d="M5 9 L5 29 27 29 27 9 Z M10 9 C10 9 10 3 16 3 22 3 22 9 22 9" />
+      </svg>;
+    }
+
     case 'ban': {
       return <svg id="i-ban" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
           <circle cx="16" cy="16" r="14" />
@@ -213,6 +219,12 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
       </svg>;
     }
 
+    case 'clipboard': {
+      return <svg id="i-clipboard" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
+          <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+      </svg>;
+    }
+
     case 'clock': {
       return <svg id="i-clock" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
           <circle cx="16" cy="16" r="14" />
@@ -243,6 +255,13 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
           <path d="M2 7 L2 25 30 25 30 7 Z M5 18 L9 18 M5 21 L11 21" />
           <path d="M2 11 L2 13 30 13 30 11 Z" fill="currentColor" />
       </svg>;
+    }
+
+    case 'desktop': {
+      return <svg id="i-desktop" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
+          <path d="M10 29 C10 29 10 24 16 24 22 24 22 29 22 29 L10 29 Z M2 6 L2 23 30 23 30 6 2 6 Z" />
+      </svg>
+      ;
     }
 
     case 'download': {
@@ -305,16 +324,25 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
       </svg>;
     }
 
+    case 'feed': {
+      return <svg id="i-feed" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
+          <circle cx="6" cy="26" r="2" fill="currentColor" />
+          <path d="M4 15 C11 15 17 21 17 28 M4 6 C17 6 26 15 26 28" />
+      </svg>;
+    }
+
     case 'file': {
       return <svg id="i-file" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
           <path d="M6 2 L6 30 26 30 26 10 18 2 Z M18 2 L18 10 26 10" />
       </svg>;
     }
 
-    case 'fire': {
-      return <svg id="i-fire" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
-          <path d="M15 30 C0 30 15 13 12 3 28 13 32 30 15 30 Z M17 30 C10 30 17 20 17 20 17 20 24 30 17 30 Z" />
-      </svg>;
+    case 'filter': {
+      return <svg id="i-filter" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
+          <path d="M2 5 C2 5 6 3 16 3 26 3 30 5 30 5 L19 18 19 27 13 30 13 18 2 5Z" />
+      </svg>
+      
+      ;
     }
 
     case 'flag': {
@@ -338,6 +366,18 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
     case 'forwards': {
       return <svg id="i-forwards" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
           <path d="M16 2 L30 16 16 30 16 16 2 30 2 2 16 16 Z" /> 
+      </svg>;
+    }
+
+    case 'fullscreen-exit': {
+      return <svg id="i-fullscreen-exit" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
+          <path d="M4 12 L12 12 12 4 M20 4 L20 12 28 12 M4 20 L12 20 12 28 M28 20 L20 20 20 28" />
+      </svg>;
+    }
+
+    case 'fullscreen': {
+      return <svg id="i-fullscreen" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
+          <path d="M4 12 L4 4 12 4 M20 4 L28 4 28 12 M4 20 L4 28 12 28 M28 20 L28 28 20 28" />
       </svg>;
     }
 
@@ -428,9 +468,33 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
       </svg>;
     }
 
+    case 'microphone': {
+      return <svg id="i-microphone" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
+          <path d="M16 2 C12 2 12 6 12 6 L12 16 C12 16 12 20 16 20 20 20 20 16 20 16 L20 6 C20 6 20 2 16 2 Z M8 17 C8 17 8 24 16 24 24 24 24 17 24 17 M13 29 L19 29 M16 24 L16 29" />
+      </svg>;
+    }
+
     case 'minus': {
       return <svg id="i-minus" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
           <path d="M2 16 L30 16" />
+      </svg>;
+    }
+
+    case 'mobile': {
+      return <svg id="i-mobile" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
+          <path d="M21 2 L11 2 C10 2 9 3 9 4 L9 28 C9 29 10 30 11 30 L21 30 C22 30 23 29 23 28 L23 4 C23 3 22 2 21 2 Z M9 5 L23 5 M9 27 L23 27" />
+      </svg>;
+    }
+
+    case 'moon': {
+      return <svg id="i-moon" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
+          <path d="M14 2C 9 2 3 7 3 15 3 23 9 29 17 29 25 29 30 23 30 18 19 25 7 13 14 2Z" />
+      </svg>;
+    }
+
+    case 'move': {
+      return <svg id="i-move" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
+          <path d="M3 16 L29 16 M16 3 L16 29 M12 7 L16 3 20 7 M12 25 L16 29 20 25 M25 12 L29 16 25 20 M7 12 L3 16 7 20" />
       </svg>;
     }
 
@@ -510,7 +574,7 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
     }
 
     case 'search': {
-      return <svg id="i-search" viewBox="0 0 32 32" fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
+      return <svg id="i-search" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
           <circle cx="14" cy="14" r="12" />
           <path d="M23 23 L30 30"  />
       </svg>;
@@ -526,6 +590,19 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
       return <svg id="i-settings" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
           <path d="M13 2 L13 6 11 7 8 4 4 8 7 11 6 13 2 13 2 19 6 19 7 21 4 24 8 28 11 25 13 26 13 30 19 30 19 26 21 25 24 28 28 24 25 21 26 19 30 19 30 13 26 13 25 11 28 8 24 4 21 7 19 6 19 2 Z" />
           <circle cx="16" cy="16" r="4" />
+      </svg>;
+    }
+
+    case 'sign-in': {
+      return <svg id="i-signin" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
+          <path d="M3 16 L23 16 M15 8 L23 16 15 24 M21 4 L29 4 29 28 21 28" />
+      </svg>
+      ;
+    }
+
+    case 'sign-out': {
+      return <svg id="i-signout" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
+          <path d="M28 16 L8 16 M20 8 L28 16 20 24 M11 28 L3 28 3 4 11 4" />
       </svg>;
     }
 
@@ -545,6 +622,13 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
       return <svg id="i-tag" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
           <circle cx="24" cy="8" r="2" />
           <path d="M2 18 L18 2 30 2 30 14 14 30 Z" />
+      </svg>;
+    }
+
+    case 'telephone': {
+      return <svg id="i-telephone" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
+          <path d="M3 12 C3 5 10 5 16 5 22 5 29 5 29 12 29 20 22 11 22 11 L10 11 C10 11 3 20 3 12 Z M11 14 C11 14 6 19 6 28 L26 28 C26 19 21 14 21 14 L11 14 Z" />
+          <circle cx="16" cy="21" r="4" />
       </svg>;
     }
 
@@ -597,6 +681,30 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
       </svg>;
     }
 
+    case 'zoom-in': {
+      return <svg id="i-zoom-in" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
+          <circle cx="14" cy="14" r="12" />
+          <path d="M23 23 L30 30" />
+          <path d="M14 10 L14 18 M10 14 L18 14" />
+      </svg>;
+    }
+
+    case 'zoom-out': {
+      return <svg id="i-zoom-out" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
+          <circle cx="14" cy="14" r="12" />
+          <path d="M23 23 L30 30" />
+          <path d="M10 14 L18 14" />
+      </svg>;
+    }
+
+    case 'zoom-reset': {
+      return <svg id="i-zoom-reset" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
+          <circle cx="14" cy="14" r="12" />
+          <path d="M23 23 L30 30" />
+          <path d="M9 12 L9 9 12 9 M16 9 L19 9 19 12 M9 16 L9 19 12 19 M19 16 L19 19 16 19" />
+      </svg>;
+    }
+
       default:
         return null;
     }
@@ -611,6 +719,7 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
   | 'arrow-right'
   | 'arrow-top'
   | 'backwards'
+  | 'bag'
   | 'ban'
   | 'bell'
   | 'book'
@@ -627,11 +736,13 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
   | 'chevron-left'
   | 'chevron-right'
   | 'chevron-top'
+  | 'clipboard'
   | 'clock'
   | 'close'
   | 'code'
   | 'compose'
   | 'creditcard'
+  | 'desktop'
   | 'download'
   | 'edit'
   | 'eject'
@@ -641,12 +752,15 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
   | 'export'
   | 'external'
   | 'eye'
+  | 'feed'
   | 'file'
-  | 'fire'
+  | 'filter'
   | 'flag'
   | 'folder-open'
   | 'folder'
   | 'forwards'
+  | 'fullscreen-exit'
+  | 'fullscreen'
   | 'gift'
   | 'github'
   | 'heart'
@@ -661,7 +775,11 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
   | 'mail'
   | 'menu'
   | 'msg'
+  | 'microphone'
   | 'minus'
+  | 'mobile'
+  | 'moon'
+  | 'move'
   | 'music'
   | 'mute'
   | 'options'
@@ -677,9 +795,12 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
   | 'search'
   | 'send'
   | 'settings'
+  | 'sign-in'
+  | 'sign-out'
   | 'star'
   | 'start'
   | 'tag'
+  | 'telephone'
   | 'trash'
   | 'twitter'
   | 'unlock'
@@ -688,4 +809,7 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
   | 'video'
   | 'volume'
   | 'work'
+  | 'zoom-in'
+  | 'zoom-out'
+  | 'zoom-reset'
   ;
