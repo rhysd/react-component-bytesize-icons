@@ -63,7 +63,7 @@ export default class BytesizeIcon extends React.PureComponent<BytesizeIconProps,
 
 
 
-  function renderIcon(name: BytesizeIconName, length: number, strokeWidth: string): JSX.Element | null {
+  function renderIcon(name: BytesizeIconName, length: number, strokeWidth: string): React.ReactElement | null {
     switch (name) {
       case 'activity': {
       return <svg id="i-activity" viewBox="0 0 32 32" width={length} height={length} fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>

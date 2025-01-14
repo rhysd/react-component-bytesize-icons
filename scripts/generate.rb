@@ -44,7 +44,7 @@ def generate_index_tsx(icons)
   File.write(tsx, <<-JS)
   #{template}
 
-  function renderIcon(name: BytesizeIconName, length: number, strokeWidth: string): JSX.Element | null {
+  function renderIcon(name: BytesizeIconName, length: number, strokeWidth: string): React.ReactElement | null {
     switch (name) {
   #{generate_case_clauses icons}
       default:
