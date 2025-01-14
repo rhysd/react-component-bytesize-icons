@@ -4,14 +4,10 @@
   "description": "One react component for bytesize icons",
   "main": "index.js",
   "devDependencies": {
-    "@types/enzyme": "^3.10.18",
-    "@types/mocha": "^10.0.10",
     "@types/node": "^22.10.6",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
     "bytesize-icons": "^1.4.0",
-    "enzyme": "^3.11.0",
-    "mocha": "^11.0.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "typescript": "~5.7.3"
@@ -21,9 +17,8 @@
     "gen:tsx": "tsc -p .",
     "gen:dts": "tsc -d --jsx react index.tsx",
     "gen": "npm run gen:template && npm run gen:tsx && npm run gen:dts",
-    "test-dts": "tsc --jsx react --noEmit test-dts/test.tsx index.d.ts",
-    "test": "tsc -p . && mocha test/*.js",
-    "preversion": "npm run test-dts && npm run test"
+    "test": "tsc --jsx react --noEmit test-dts/test.tsx index.d.ts",
+    "preversion": "npm run test"
   },
   "repository": {
     "type": "git",

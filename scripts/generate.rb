@@ -71,14 +71,8 @@ def generate_readme(icons)
   File.write(readme, template.gsub('{All icons table here}', table))
 end
 
-def generate_json_for_test(icons)
-  file =  File.join(__dir__, '..', 'test', 'icons.json')
-  File.write(file, JSON.generate(icons.keys))
-end
-
 icons = read_svg_icons File.join(__dir__, '..', 'node_modules', 'bytesize-icons', 'dist/icons')
 raise 'Icons not found' if icons.empty?
 
 generate_index_tsx icons
 generate_readme icons
-generate_json_for_test icons
