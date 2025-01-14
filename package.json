@@ -14,7 +14,6 @@
     "mocha": "^11.0.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tslint": "~6.1.3",
     "typescript": "~5.7.3"
   },
   "scripts": {
@@ -22,10 +21,9 @@
     "gen:tsx": "tsc -p .",
     "gen:dts": "tsc -d --jsx react index.tsx",
     "gen": "npm run gen:template && npm run gen:tsx && npm run gen:dts",
-    "lint": "tslint index.tsx test/*.tsx",
     "test-dts": "tsc --jsx react --noEmit test-dts/test.tsx index.d.ts",
     "test": "tsc -p . && mocha test/*.js",
-    "preversion": "npm run lint && npm run test-dts && npm run test"
+    "preversion": "npm run test-dts && npm run test"
   },
   "repository": {
     "type": "git",
